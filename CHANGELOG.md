@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.1.7](https://github.com/KemingHe/osuswe-app/compare/v0.1.6...v0.1.7) (2024-12-17)
+
 ## [0.1.6](https://github.com/KemingHe/osuswe-app/compare/v0.1.5...v0.1.6) (2024-12-17)
 
 ### Bug Fixes
