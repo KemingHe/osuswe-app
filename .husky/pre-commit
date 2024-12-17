@@ -1,4 +1,9 @@
 #!/bin/bash
 
 pnpm lint
+pnpm build
+pnpm test:unit
+pnpm scan:secrets
+
+# Once e2e tests are added, uncomment the following line.
 # pnpm verify

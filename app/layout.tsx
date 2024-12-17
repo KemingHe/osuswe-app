@@ -1,19 +1,19 @@
-import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from 'next';
+import { Inter } from 'next/font/google';
 
-import "./globals.css";
+import '@/app/globals.css';
 
 const inter = Inter({
-  subsets: ["latin"]
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "OSUSWE App",
-  description: "The OSUSWE App"
+  title: 'OSUSWE App',
+  description: 'The OSUSWE App',
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
