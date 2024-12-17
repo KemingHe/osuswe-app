@@ -1,13 +1,7 @@
 {
   "name": "osuswe-app",
   "description": "OSUSWE App",
-  "keywords": [
-    "osuswe",
-    "ohio state",
-    "typescript",
-    "nextjs",
-    "firebase"
-  ],
+  "keywords": ["osuswe", "ohio state", "typescript", "nextjs", "firebase"],
   "version": "0.1.1",
   "private": true,
   "type": "module",
