@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.6](https://github.com/KemingHe/osuswe-app/compare/v0.1.5...v0.1.6) (2024-12-17)
+
+### Bug Fixes
+
+* **biome.json:** removed packaged.json from biome ignore, found root cause of inconsistency ([6ddbb20](https://github.com/KemingHe/osuswe-app/commit/6ddbb20a637557c0e139f0865626fce7b5a341cc))
+
 ## [0.1.5](https://github.com/KemingHe/osuswe-app/compare/v0.1.4...v0.1.5) (2024-12-17)
 
 ### Bug Fixes
