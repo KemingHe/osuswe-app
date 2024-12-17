@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.5](https://github.com/KemingHe/osuswe-app/compare/v0.1.4...v0.1.5) (2024-12-17)
+
+### Bug Fixes
+
+* **unit-test.yml:** fixed typo in workflow file env declaration that fails unit tests in ci ([96058cf](https://github.com/KemingHe/osuswe-app/commit/96058cf95c570d7041ce889376159ada1428a024))
+
 ## [0.1.4](https://github.com/KemingHe/osuswe-app/compare/v0.1.3...v0.1.4) (2024-12-17)
 
 ### Bug Fixes
