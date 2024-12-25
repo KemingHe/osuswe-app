@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.0](https://github.com/KemingHe/osuswe-app/compare/v0.2.0...v0.3.0) (2024-12-25)
+
+### Features
+
+* **lib/stack-auth:** completed (and tested working) stack auth for osuswe app ([e6cfb7f](https://github.com/KemingHe/osuswe-app/commit/e6cfb7f1ead0f09f022a6725fb651f47eed1bda8))
+
 ## [0.2.0](https://github.com/KemingHe/osuswe-app/compare/v0.1.7...v0.2.0) (2024-12-25)
 
 ### Features
