@@ -1,8 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`actionCodeSettings > should match the snapshot 1`] = `
-{
-  "handleCodeInApp": true,
-  "url": "http://localhost:3000/auth/verify",
-}
-`;

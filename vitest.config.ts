@@ -14,7 +14,7 @@ export default defineConfig({
     watch: false,
 
     // Run setup file before tests.
-    setupFiles: ['vitest.setup.ts'],
+    setupFiles: ['./vitest.setup.ts'],
 
     // Allow tests to pass even if no test files are found.
     // passWithNoTests: true,

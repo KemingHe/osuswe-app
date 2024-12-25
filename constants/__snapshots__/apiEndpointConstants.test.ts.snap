@@ -1,8 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`(backend) api endpoint constants > matches the latest snapshot 1`] = `
-{
-  "AUTH_SIGN_IN_API_ENDPOINT": "/api/auth/sign-in",
-  "USER_PROFILE_API_ENDPOINT": "/api/user/profile",
-}
-`;

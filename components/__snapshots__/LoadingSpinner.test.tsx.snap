@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LoadingSpinner component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <output
+    aria-live="polite"
+    class="card bg-base-200 shadow-lg text-center"
+  >
+    <div
+      class="card-body items-center gap-3 text-lg"
+    >
+      <img
+        alt="Loading spinner"
+        class="loading-spinner-image"
+        data-nimg="1"
+        decoding="async"
+        height="50"
+        src="/_next/image?url=%2Fimages%2Fosuswe-logo-512.png&w=128&q=75"
+        srcset="/_next/image?url=%2Fimages%2Fosuswe-logo-512.png&w=64&q=75 1x, /_next/image?url=%2Fimages%2Fosuswe-logo-512.png&w=128&q=75 2x"
+        style="color: transparent;"
+        width="50"
+      />
+      <p
+        class="text-center"
+      >
+        Loading...
+      </p>
+    </div>
+  </output>
+</DocumentFragment>
+`;

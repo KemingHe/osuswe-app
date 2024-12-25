@@ -3,7 +3,8 @@
 exports[`(frontend) route constants > matches the latest snapshot 1`] = `
 {
   "AUTH_SIGN_IN_ROUTE": "/auth/sign-in",
-  "AUTH_VERIFY_ROUTE": "/auth/verify",
+  "AUTH_SIGN_OUT_ROUTE": "/auth/sign-out",
+  "AUTH_VERIFY_EMAIL_ROUTE": "/auth/verify-email",
   "HOME_ROUTE": "/",
   "USER_DASHBOARD_ROUTE": "/user/dashboard",
   "USER_PROFILE_ROUTE": "/user/profile",
