@@ -1,4 +1,8 @@
-export default function Homepage() {
+'use server';
+
+import type { JSX } from 'react';
+
+export default async function Homepage(): Promise<JSX.Element> {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
       <div className="btn btn-primary">Primary</div>

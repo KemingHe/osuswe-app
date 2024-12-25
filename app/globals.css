@@ -11,4 +11,27 @@
     background-attachment: fixed;
     background-repeat: repeat;
   }
+
+  /* Loading spinner image. */
+  .loading-spinner-image {
+    animation: spin-image 3s linear infinite;
+  }
+
+  @keyframes spin-image {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Enforce >=16px font size for (DaisyUI) input and textarea to prevent mobile zoom. */
+  .input {
+    @apply text-base;
+  }
+
+  .textarea {
+    @apply text-base;
+  }
 }

@@ -1,3 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`The Firebase Auth emaiil local storage key > matches the latest snapshot 1`] = `"firebase-auth-email"`;

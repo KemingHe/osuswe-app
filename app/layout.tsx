@@ -1,11 +1,10 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
+import type { JSX, ReactNode } from 'react';
 
+import GOOGLE_ANALYTICS_MEASUREMENT_ID from '@/lib/firebase/googleAnalyticsMeasurementId';
 import '@/app/globals.css';
-
-const inter = Inter({
-  subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
   title: 'OSUSWE App',
@@ -31,11 +30,21 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport =
+  // biome-ignore format: added alignment for clarity.
+  {
+    themeColor : '#ffffff',
+    colorScheme: 'only light',
+    viewportFit: 'cover',        // Required for iOS devices.
+};
+
+const inter = Inter({
+  subsets: ['latin'],
+});
+
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: ReactNode }>): JSX.Element {
   return (
     <html lang="en">
       <body
@@ -45,6 +54,7 @@ export default function RootLayout({
           {children}
         </div>
       </body>
+      <GoogleAnalytics gaId={GOOGLE_ANALYTICS_MEASUREMENT_ID} />
     </html>
   );
 }
