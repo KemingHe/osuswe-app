@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.1](https://github.com/KemingHe/osuswe-app/compare/v0.3.0...v0.3.1) (2024-12-25)
+
+### Bug Fixes
+
+* **unit-test.yaml:** updated CI to include necessary envs for passing tests ([8057a53](https://github.com/KemingHe/osuswe-app/commit/8057a536061713635a8ba97af1d64644c0cefde0))
+
 ## [0.3.0](https://github.com/KemingHe/osuswe-app/compare/v0.2.0...v0.3.0) (2024-12-25)
 
 ### Features
