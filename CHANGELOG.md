@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.0](https://github.com/KemingHe/osuswe-app/compare/v0.1.7...v0.2.0) (2024-12-25)
+
+### Features
+
+* **tailwind.config.ts:** added custom osuswe style and implemented max mobile viewport ([f13525e](https://github.com/KemingHe/osuswe-app/commit/f13525e7582ba1fe29e4d0af7c5a57fa396d856d))
+
 ## [0.1.7](https://github.com/KemingHe/osuswe-app/compare/v0.1.6...v0.1.7) (2024-12-17)
 
 ## [0.1.6](https://github.com/KemingHe/osuswe-app/compare/v0.1.5...v0.1.6) (2024-12-17)
