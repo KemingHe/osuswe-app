@@ -2,7 +2,14 @@
 
 exports[`external link constants > matches the latest snapshot 1`] = `
 {
+  "BUCKEYE_GPT_HOME_LINK": "https://buckeye.chat",
+  "GITHUB_REPO_LINK": "https://github.com/KemingHe/osuswe-app",
   "LEGAL_DISCLAIMER_LINK": "https://github.com/KemingHe/osuswe-app/blob/main/docs/legal/legal-disclaimer.md",
+  "OSUSWE_ORG_EVENTS_LINK": "https://osuswe.org/calendar",
+  "OSUSWE_ORG_FAQ_LINK": "https://osuswe.org/faq",
+  "OSUSWE_ORG_HOME_LINK": "https://osuswe.org",
+  "OSUSWE_ORG_MEMBERSHIP_LINK": "https://osuswe.org/how-to-become-a-member",
+  "OSUSWE_ORG_OFFICERS_LINK": "https://osuswe.org/swe-officers",
   "PRIVACY_POLICY_LINK": "https://github.com/KemingHe/osuswe-app/blob/main/docs/legal/privacy-policy.md",
   "TERMS_AND_CONDITIONS_LINK": "https://github.com/KemingHe/osuswe-app/blob/main/docs/legal/terms-and-conditions.md",
 }

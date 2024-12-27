@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://github.com/KemingHe/osuswe-app/compare/v0.3.2...v0.4.0) (2024-12-27)
+
+### Features
+
+* **app/page.tsx:** added ssr homepage with header/footer, hero, and dev timeline ([76db464](https://github.com/KemingHe/osuswe-app/commit/76db464f46cf9fa6c492ecbc2c2ce1f5cb8e74ad))
+
+## [0.3.2](https://github.com/KemingHe/osuswe-app/compare/v0.3.1...v0.3.2) (2024-12-25)
+
 ## [0.3.1](https://github.com/KemingHe/osuswe-app/compare/v0.3.0...v0.3.1) (2024-12-25)
 
 ### Bug Fixes

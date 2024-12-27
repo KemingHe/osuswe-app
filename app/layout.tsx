@@ -40,6 +40,7 @@ export const viewport: Viewport =
 
 const inter = Inter({
   subsets: ['latin'],
+  display: 'swap',
 });
 
 export default function RootLayout({
@@ -50,7 +51,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} h-dvh flex flex-col justify-center items-center circuit-board-pattern`}
       >
-        <div className="max-w-sm max-h-[750px] w-full h-full bg-base-100 shadow-lg">
+        <div className="max-w-[450px] max-h-[950px] w-full h-full bg-base-100 shadow-lg relative overflow-x-auto">
           {children}
         </div>
       </body>
