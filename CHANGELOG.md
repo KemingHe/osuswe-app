@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.1](https://github.com/KemingHe/osuswe-app/compare/v0.4.0...v0.4.1) (2024-12-27)
+
+### Bug Fixes
+
+* **input and link elements:** fixed input auto-caps, fixed osuswe slack link to be external ([7f2ff98](https://github.com/KemingHe/osuswe-app/commit/7f2ff98befc9d841b7d2e7ac08dcbbe8b145c4e8)), closes [#8](https://github.com/KemingHe/osuswe-app/issues/8) [#3](https://github.com/KemingHe/osuswe-app/issues/3)
+
 ## [0.4.0](https://github.com/KemingHe/osuswe-app/compare/v0.3.2...v0.4.0) (2024-12-27)
 
 ### Features
