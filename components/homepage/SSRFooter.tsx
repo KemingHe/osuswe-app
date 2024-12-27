@@ -4,9 +4,13 @@ import { SocialIcon } from 'react-social-icons';
 
 import {
   LEGAL_DISCLAIMER_LINK,
+  OSUSWE_ORG_EMAIL_LINK,
   OSUSWE_ORG_EVENTS_LINK,
   OSUSWE_ORG_HOME_LINK,
+  OSUSWE_ORG_INSTAGRAM_LINK,
+  OSUSWE_ORG_LINKEDIN_LINK,
   OSUSWE_ORG_MEMBERSHIP_LINK,
+  OSUSWE_ORG_SLACK_LINK,
   PRIVACY_POLICY_LINK,
   TERMS_AND_CONDITIONS_LINK,
 } from '@/constants/externalLinkConstants';
@@ -82,22 +86,22 @@ export default function SSRFooter(): JSX.Element {
         </h6>
         <div className="grid grid-cols-2 gap-4">
           <SocialIcon
-            url="mailto:osuswe@gmail.com"
+            url={OSUSWE_ORG_EMAIL_LINK}
             style={footerIconStyle}
             aria-label="Email OSUSWE"
           />
           <SocialIcon
-            url="ohiostateswe.slack.com"
+            url={OSUSWE_ORG_SLACK_LINK}
             style={footerIconStyle}
             aria-label="Join OSUSWE on Slack"
           />
           <SocialIcon
-            url="https://instagram.com/osuswe"
+            url={OSUSWE_ORG_INSTAGRAM_LINK}
             style={footerIconStyle}
             aria-label="Follow OSUSWE on Instagram"
           />
           <SocialIcon
-            url="https://il.linkedin.com/company/osuswe"
+            url={OSUSWE_ORG_LINKEDIN_LINK}
             style={footerIconStyle}
             aria-label="Connect with OSUSWE on LinkedIn"
           />

@@ -8,3 +8,4 @@ export const AUTH_SIGN_OUT_ROUTE = '/auth/sign-out';
 // User routes.
 export const USER_DASHBOARD_ROUTE = '/user/dashboard';
 export const USER_PROFILE_ROUTE = '/user/profile';
+export const USER_ATTENDANCE_ROUTE = '/user/attendance';

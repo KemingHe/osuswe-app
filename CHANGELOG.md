@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.5.0](https://github.com/KemingHe/osuswe-app/compare/v0.4.2...v0.5.0) (2024-12-27)
+
+### Features
+
+* **components/bottomnav:** added dynamic bottom nav for client pages ([4d83adc](https://github.com/KemingHe/osuswe-app/commit/4d83adc7905657282e347e1b05e9da7e012fb103)), closes [#6](https://github.com/KemingHe/osuswe-app/issues/6)
+
+## [0.4.2](https://github.com/KemingHe/osuswe-app/compare/v0.4.1...v0.4.2) (2024-12-27)
+
+### Bug Fixes
+
+* **signoutwireframe.tsx:** updated sign-out prompts with OSUSWE App info, added goback handler ([1cc206f](https://github.com/KemingHe/osuswe-app/commit/1cc206fb9a207408543a37234ee9c167b055512a)), closes [#9](https://github.com/KemingHe/osuswe-app/issues/9)
+
+## [0.4.1](https://github.com/KemingHe/osuswe-app/compare/v0.4.0...v0.4.1) (2024-12-27)
+
+### Bug Fixes
+
+* **input and link elements:** fixed input auto-caps, fixed osuswe slack link to be external ([7f2ff98](https://github.com/KemingHe/osuswe-app/commit/7f2ff98befc9d841b7d2e7ac08dcbbe8b145c4e8)), closes [#8](https://github.com/KemingHe/osuswe-app/issues/8) [#3](https://github.com/KemingHe/osuswe-app/issues/3)
+
 ## [0.4.0](https://github.com/KemingHe/osuswe-app/compare/v0.3.2...v0.4.0) (2024-12-27)
 
 ### Features

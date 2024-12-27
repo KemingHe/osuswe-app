@@ -18,6 +18,11 @@ export const OSUSWE_ORG_MEMBERSHIP_LINK: string =
 export const OSUSWE_ORG_OFFICERS_LINK: string =
   'https://osuswe.org/swe-officers';
 export const OSUSWE_ORG_FAQ_LINK: string = 'https://osuswe.org/faq';
+export const OSUSWE_ORG_EMAIL_LINK: string = 'mailto:osuswe@gmail.com';
+export const OSUSWE_ORG_SLACK_LINK: string = 'https://ohiostateswe.slack.com';
+export const OSUSWE_ORG_INSTAGRAM_LINK: string = 'https://instagram.com/osuswe';
+export const OSUSWE_ORG_LINKEDIN_LINK: string =
+  'https://il.linkedin.com/company/osuswe';
 
 // Buckeye GPT links.
 export const BUCKEYE_GPT_HOME_LINK: string = 'https://buckeye.chat';
