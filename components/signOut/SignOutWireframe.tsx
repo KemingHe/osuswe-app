@@ -1,18 +1,17 @@
 import { ArrowRightIcon, ArrowUturnLeftIcon } from '@heroicons/react/16/solid';
 import { ArrowRightStartOnRectangleIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
 import type { JSX, MouseEventHandler } from 'react';
-
-import { HOME_ROUTE } from '@/constants/routeConstants';
 
 // biome-ignore format: added alignment for clarity.
 export interface SignOutWireframeProps {
   isLoading     : boolean;
+  goBackHandler : MouseEventHandler<HTMLButtonElement>;
   signOutHandler: MouseEventHandler<HTMLButtonElement>;
 }
 
 export function SignOutWireframe({
   isLoading,
+  goBackHandler,
   signOutHandler,
 }: SignOutWireframeProps): JSX.Element {
   // NOTE: Width is manually set here to be consistent with SignInWirefram,
@@ -31,7 +30,7 @@ export function SignOutWireframe({
               <p>
                 You will lose&nbsp;
                 <span className="font-semibold text-accent">FREE</span>
-                &nbsp;access to the latest OpenAI models and more.
+                &nbsp;access to the latest features and more.
               </p>
             </div>
             <div className="w-full flex items-center justify-around">
@@ -40,9 +39,12 @@ export function SignOutWireframe({
                * using 6rem as min width to maintain style
                * when transition to loading.
                */}
-              <Link
-                href={HOME_ROUTE}
+              <button
+                type="button"
                 className={`btn ${isLoading ? 'btn-disabled' : 'btn-accent'} btn-sm min-w-24`}
+                onClick={goBackHandler}
+                disabled={isLoading}
+                aria-disabled={isLoading}
               >
                 {isLoading ? (
                   <span className="loading loading-dots loading-md" />
@@ -50,10 +52,10 @@ export function SignOutWireframe({
                   <span>Go back</span>
                 )}
                 <ArrowUturnLeftIcon className="size-4 -ms-1.5" />
-              </Link>
+              </button>
               <button
                 type="button"
-                className="btn btn-error btn-outline btn-sm min-w-24"
+                className={`btn ${isLoading ? 'btn-disabled' : 'btn-error'} btn-outline btn-sm min-w-24`}
                 onClick={signOutHandler}
                 disabled={isLoading}
                 aria-disabled={isLoading}
