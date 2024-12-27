@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.2](https://github.com/KemingHe/osuswe-app/compare/v0.4.1...v0.4.2) (2024-12-27)
+
+### Bug Fixes
+
+* **signoutwireframe.tsx:** updated sign-out prompts with OSUSWE App info, added goback handler ([1cc206f](https://github.com/KemingHe/osuswe-app/commit/1cc206fb9a207408543a37234ee9c167b055512a)), closes [#9](https://github.com/KemingHe/osuswe-app/issues/9)
+
 ## [0.4.1](https://github.com/KemingHe/osuswe-app/compare/v0.4.0...v0.4.1) (2024-12-27)
 
 ### Bug Fixes
