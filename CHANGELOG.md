@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.0](https://github.com/KemingHe/osuswe-app/compare/v0.4.2...v0.5.0) (2024-12-27)
+
+### Features
+
+* **components/bottomnav:** added dynamic bottom nav for client pages ([4d83adc](https://github.com/KemingHe/osuswe-app/commit/4d83adc7905657282e347e1b05e9da7e012fb103)), closes [#6](https://github.com/KemingHe/osuswe-app/issues/6)
+
 ## [0.4.2](https://github.com/KemingHe/osuswe-app/compare/v0.4.1...v0.4.2) (2024-12-27)
 
 ### Bug Fixes
