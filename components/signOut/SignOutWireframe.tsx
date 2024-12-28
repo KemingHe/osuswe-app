@@ -18,13 +18,13 @@ export function SignOutWireframe({
   // refactor when ready.
   return (
     <main className="flex flex-col items-center justify-center h-full w-full">
-      <div className="card bg-base-200 shadow-lg w-72">
+      <div className="card w-72">
         <figure className="pt-8">
           <ArrowRightStartOnRectangleIcon className="size-12 text-error" />
         </figure>
         <div className="card-body items-center py-4 gap-4">
           {/* NOTE: Current manual width setting breaks if using text-2xl or above. */}
-          <h2 className="card-title text-primary">Are you sure?</h2>
+          <h2 className="card-title">Are you sure?</h2>
           <div className="card-actions gap-4">
             <div className="flex flex-col gap-2 text-sm text-center leading-snug">
               <p>

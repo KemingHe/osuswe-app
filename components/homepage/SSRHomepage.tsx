@@ -7,8 +7,8 @@ import SSRMain from '@/components/homepage/main/SSRMain';
 
 export default function SSRHomepage(): JSX.Element {
   return (
-    <div className="w-full h-full flex flex-col">
-      <GitHubCorner className="text-primary-content" />
+    <div className="w-full h-full flex flex-col bg-base-content">
+      <GitHubCorner />
       <SSRHeader />
       <SSRMain />
       <SSRFooter />

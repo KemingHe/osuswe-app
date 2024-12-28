@@ -31,7 +31,7 @@ export function SignInForm({
         <div className="label -mb-1">
           <span
             id={nameDotNumberInputLabelId}
-            className={`label-text text-sm ${errors.nameDotNumber ? 'text-error' : ''}`}
+            className={`label-text text-sm ${errors.nameDotNumber ? 'text-error font-semibold' : ''}`}
           >
             {errors.nameDotNumber
               ? 'Enter a valid name.#'
@@ -46,7 +46,7 @@ export function SignInForm({
             id={nameDotNumberInputId}
             type="text"
             placeholder="buckeye.1"
-            className={`join-item input input-sm input-bordered ${errors.nameDotNumber ? 'input-error' : ''} focus:border-none w-36`}
+            className={`join-item input ${errors.nameDotNumber ? 'input-error' : ''} input-sm w-36`}
             disabled={isDisabled}
             required
             autoCapitalize="none"
@@ -58,15 +58,15 @@ export function SignInForm({
             aria-invalid={errors.nameDotNumber ? 'true' : 'false'}
             aria-labelledby={nameDotNumberInputLabelId}
           />
-          <div className="join-item btn btn-sm no-animation cursor-default p-2">
-            <span className="font-normal">@osu.edu</span>
+          <div className="join-item btn btn-neutral btn-sm no-animation font-normal cursor-default px-2">
+            @osu.edu
           </div>
         </div>
       </label>
       <div className="form-control w-full">
         <button
           type="submit"
-          className="btn btn-primary btn-sm"
+          className="btn btn-accent btn-sm"
           disabled={isDisabled}
           aria-disabled={isDisabled}
         >

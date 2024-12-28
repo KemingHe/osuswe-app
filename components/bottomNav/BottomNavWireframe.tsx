@@ -48,7 +48,7 @@ export function BottomNavWireframe({
   ];
 
   return (
-    <div className="btm-nav text-sm border-t relative flex-shrink-0">
+    <div className="btm-nav text-sm relative flex-shrink-0">
       {navItems.map((navItem) => (
         <BottomNavItem key={navItem.label} {...navItem} />
       ))}

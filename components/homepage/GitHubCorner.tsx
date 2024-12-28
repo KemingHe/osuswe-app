@@ -4,13 +4,11 @@ import type { JSX } from 'react';
 import styles from '@/components/homepage/GitHubCorner.module.css';
 import { GITHUB_REPO_LINK } from '@/constants/externalLinkConstants';
 
-export default function GitHubCorner({
-  className = '',
-}: Readonly<{ className?: string }>): JSX.Element {
+export default function GitHubCorner(): JSX.Element {
   return (
     <Link
       href={GITHUB_REPO_LINK}
-      className={`${styles['github-corner']} ${className}`}
+      className={styles['github-corner']}
       aria-label="View source on GitHub"
     >
       <svg

@@ -5,7 +5,7 @@ exports[`FatalError component > matches the snapshot 1`] = `
   <div
     aria-atomic="true"
     aria-live="assertive"
-    class="card bg-base-200 shadow-lg text-center"
+    class="card text-center"
     role="alert"
   >
     <div

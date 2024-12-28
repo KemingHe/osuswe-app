@@ -4,7 +4,7 @@ import type { JSX } from 'react';
 export default function FatalError(): JSX.Element {
   return (
     <div
-      className="card bg-base-200 shadow-lg text-center"
+      className="card text-center"
       role="alert"
       aria-live="assertive"
       aria-atomic="true"

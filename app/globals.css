@@ -39,15 +39,16 @@
    * Override the DaisyUI timeline with custom spacing and alignment. 
    * Same placement reason as the footer.
    */
-  .timeline-item {
-    @apply h-12;
-  }
-
   .timeline-start {
-    @apply text-right font-bold;
+    @apply text-right;
   }
 
   .timeline-end {
-    @apply text-left font-bold;
+    @apply text-left;
+  }
+
+  /* Apply additional uniform styling to DaisyUI cards. */
+  .card {
+    @apply bg-primary bg-opacity-15 shadow-lg;
   }
 }

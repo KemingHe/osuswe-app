@@ -6,7 +6,7 @@ import { HOME_ROUTE } from '@/constants/routeConstants';
 
 export default function SSRHeader(): JSX.Element {
   return (
-    <header className="flex-shrink-0 navbar bg-base-100 px-4 border-b">
+    <header className="flex-shrink-0 navbar px-4 border-b">
       <Link
         href={HOME_ROUTE}
         className="flex justify-center items-center text-2xl font-extrabold gap-2"
@@ -21,7 +21,7 @@ export default function SSRHeader(): JSX.Element {
           priority={true}
         />
         <span className="sr-only">OSUSWE App</span>
-        <span className="text-primary" aria-hidden="true">
+        <span className="text-secondary" aria-hidden="true">
           OSUSWE
         </span>
         <span className="text-accent" aria-hidden="true">

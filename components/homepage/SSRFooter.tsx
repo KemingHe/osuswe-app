@@ -22,7 +22,7 @@ export default function SSRFooter(): JSX.Element {
   };
 
   return (
-    <footer className="flex-shrink-0 footer bg-base-content text-base-100 leading-tight p-8">
+    <footer className="flex-shrink-0 footer bg-base-200 leading-tight p-8">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -32,6 +32,8 @@ export default function SSRFooter(): JSX.Element {
         </h6>
         <Link
           href={OSUSWE_ORG_HOME_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
           className="link link-hover"
           aria-label="Society of Women Engineers at The Ohio State University homepage"
         >
@@ -39,6 +41,8 @@ export default function SSRFooter(): JSX.Element {
         </Link>
         <Link
           href={OSUSWE_ORG_EVENTS_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
           className="link link-hover"
           aria-label="Society of Women Engineers at The Ohio State University events"
         >
@@ -46,6 +50,8 @@ export default function SSRFooter(): JSX.Element {
         </Link>
         <Link
           href={OSUSWE_ORG_MEMBERSHIP_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
           className="link link-hover link-accent"
           aria-label="Society of Women Engineers at The Ohio State University membership"
         >
@@ -58,6 +64,8 @@ export default function SSRFooter(): JSX.Element {
         </h6>
         <Link
           href={LEGAL_DISCLAIMER_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
           className="link link-hover"
           aria-label="Legal disclaimer"
         >
@@ -65,6 +73,8 @@ export default function SSRFooter(): JSX.Element {
         </Link>
         <Link
           href={PRIVACY_POLICY_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
           className="link link-hover"
           aria-label="Privacy policy"
         >
@@ -72,6 +82,8 @@ export default function SSRFooter(): JSX.Element {
         </Link>
         <Link
           href={TERMS_AND_CONDITIONS_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
           className="link link-hover flex flex-col jusify-center items-start"
           aria-label="Terms and Conditions"
         >

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { JSX } from 'react';
 
+import { DEVELOPER_LINKEDIN_LINK } from '@/constants/externalLinkConstants';
 import { USER_DASHBOARD_ROUTE } from '@/constants/routeConstants';
 
 export default function MainHero(): JSX.Element {
@@ -23,9 +24,18 @@ export default function MainHero(): JSX.Element {
         Get Started
         <ArrowRightIcon className="size-4 -ms-1" aria-hidden="true" />
       </Link>
-      <p className="text-center text-primary font-bold px-12">
-        The Ohio State-exclusive SWE experience created by students and allies,
-        for students, with 💖.
+      <p className="text-center text-secondary font-bold px-12">
+        The Ohio State-exclusive SWE experience created by&nbsp;
+        <Link
+          href={DEVELOPER_LINKEDIN_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link link-accent"
+          aria-label="Go to main developer Keming He's LinkedIn profile"
+        >
+          students and allies,
+        </Link>
+        &nbsp;for students, with 💖.
       </p>
     </div>
   );
