@@ -11,6 +11,6 @@ export default function TestPage(): JSX.Element {
   const WrappedLoadingSpinner = withCenteredWrapper(LoadingSpinner);
   const WrappedFatalError = withCenteredWrapper(FatalError);
 
-  return <WrappedLoadingSpinner />;
-  // return <WrappedFatalError />;
+  // return <WrappedLoadingSpinner />;
+  return <WrappedFatalError />;
 }

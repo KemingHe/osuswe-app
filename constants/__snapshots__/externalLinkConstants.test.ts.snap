@@ -3,6 +3,8 @@
 exports[`external link constants > matches the latest snapshot 1`] = `
 {
   "BUCKEYE_GPT_HOME_LINK": "https://buckeye.chat",
+  "DEVELOPER_GITHUB_LINK": "https://github.com/KemingHe",
+  "DEVELOPER_LINKEDIN_LINK": "https://www.linkedin.com/in/keminghe",
   "GITHUB_REPO_LINK": "https://github.com/KemingHe/osuswe-app",
   "LEGAL_DISCLAIMER_LINK": "https://github.com/KemingHe/osuswe-app/blob/main/docs/legal/legal-disclaimer.md",
   "OSUSWE_ORG_EMAIL_LINK": "mailto:osuswe@gmail.com",

@@ -9,7 +9,7 @@ const didotItalic = localFont({
 
 export default function MainTitle(): JSX.Element {
   return (
-    <div className="w-full flex flex-col bg-primary text-primary-content p-4 gap-1">
+    <div className="w-full flex flex-col bg-secondary p-4 gap-1">
       <h1
         className={`${didotItalic.className} flex flex-col justify-center items-start text-4xl gap-1`}
       >
@@ -17,7 +17,7 @@ export default function MainTitle(): JSX.Element {
         <span aria-hidden="true">Society of</span>
         <span aria-hidden="true">Women Engineers</span>
       </h1>
-      <p className="text-base text-right">at The Ohio State University</p>
+      <p className="text-right">at The Ohio State University</p>
     </div>
   );
 }

@@ -16,7 +16,7 @@ export function SignInWireframe(props: SignInWireframeProps): JSX.Element {
   return (
     <main className="w-full h-full flex flex-col justify-center items-center">
       {/* NOTE: Width is manually set here and in SignInForm.tsx, refactor when ready. */}
-      <div className="card bg-base-200 shadow-lg w-72">
+      <div className="card w-72">
         <figure className="pt-8">
           <Image
             src="/images/osuswe-logo-512.png"
@@ -28,7 +28,7 @@ export function SignInWireframe(props: SignInWireframeProps): JSX.Element {
         </figure>
         <div className="card-body items-center py-4 gap-3">
           {/* NOTE: Current manual width setting breaks if using text-2xl or above. */}
-          <h2 className="card-title text-primary">Welcome, Buckeye!</h2>
+          <h2 className="card-title">Welcome, Buckeye!</h2>
           <div className="card-actions pt-1.5">
             {isEmailSent ? <NextSteps /> : <SignInForm {...signInFormProps} />}
           </div>

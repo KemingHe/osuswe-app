@@ -11,10 +11,7 @@ export function LoadingSpinner({
   message = 'Loading...',
 }: LoadingSpinnerProps): JSX.Element {
   return (
-    <output
-      className="card bg-base-200 shadow-lg text-center"
-      aria-live="polite"
-    >
+    <output className="card text-center" aria-live="polite">
       <div className="card-body items-center gap-3 text-lg">
         <Image
           className={styles['loading-spinner-image']}
