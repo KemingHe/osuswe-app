@@ -1,6 +1,6 @@
 import type { JSX } from 'react';
 
-import { LoadingSpinner } from '@/components/LoadingSpinner';
+import { LoadingSpinner } from '@/components/loading/LoadingSpinner';
 import FailurePrompt from '@/components/verifyEmail/FailurePrompt';
 
 export interface VerifyEmailWireframeProps {

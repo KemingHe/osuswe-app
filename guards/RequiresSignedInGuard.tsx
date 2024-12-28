@@ -7,8 +7,8 @@ import {
 } from '@stackframe/stack';
 import { type JSX, type ReactNode, useEffect } from 'react';
 
-import { LoadingSpinner } from '@/components/LoadingSpinner';
 import FatalError from '@/components/error/FatalError';
+import { LoadingSpinner } from '@/components/loading/LoadingSpinner';
 import { AUTH_SIGN_IN_ROUTE } from '@/constants/routeConstants';
 import withCenteredWrapper from '@/hocs/withCenteredWrapper';
 import {
