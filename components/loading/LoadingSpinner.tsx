@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import type { JSX } from 'react';
 
+import styles from '@/components/loading/LoadingSpinner.module.css';
+
 export interface LoadingSpinnerProps {
   message?: string;
 }
@@ -15,7 +17,7 @@ export function LoadingSpinner({
     >
       <div className="card-body items-center gap-3 text-lg">
         <Image
-          className="loading-spinner-image"
+          className={styles['loading-spinner-image']}
           src="/images/osuswe-logo-512.png"
           alt="Loading spinner"
           width={50}
