@@ -4,6 +4,8 @@ import type { NextFont } from 'next/dist/compiled/@next/font';
 import { Inter } from 'next/font/google';
 import type { JSX, ReactNode } from 'react';
 
+import { PRODUCTION_DOMAIN } from '@/constants/domainConstants';
+import { DEVELOPER_LINKEDIN_LINK } from '@/constants/externalLinkConstants';
 import GOOGLE_ANALYTICS_MEASUREMENT_ID from '@/lib/firebase/googleAnalyticsMeasurementId';
 import '@/app/globals.css';
 
@@ -19,9 +21,10 @@ export const metadata: Metadata = {
     'Society of Women Engineers',
     'Student Organaization',
   ],
-  authors: [{ name: 'Keming He', url: 'https://linkedin.com/in/keminghe' }],
+  authors: [{ name: 'Keming He', url: DEVELOPER_LINKEDIN_LINK }],
   creator: 'Keming He',
   publisher: 'Keming He',
+  metadataBase: new URL(PRODUCTION_DOMAIN), // Required for NextJS production build when using og and twitter images.
   robots: {
     index: true,
     follow: true,
