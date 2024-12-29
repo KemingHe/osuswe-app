@@ -1,15 +1,18 @@
 import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata, Viewport } from 'next';
+import type { NextFont } from 'next/dist/compiled/@next/font';
 import { Inter } from 'next/font/google';
 import type { JSX, ReactNode } from 'react';
 
+import { PRODUCTION_DOMAIN } from '@/constants/domainConstants';
+import { DEVELOPER_LINKEDIN_LINK } from '@/constants/externalLinkConstants';
 import GOOGLE_ANALYTICS_MEASUREMENT_ID from '@/lib/firebase/googleAnalyticsMeasurementId';
 import '@/app/globals.css';
 
 export const metadata: Metadata = {
   title: 'OSUSWE App',
   description:
-    'Free open-source organization management app for the Society of Women Engineers at Ohio State University.',
+    'The Ohio State-exclusive SWE experience created by students and allies, for students, with 💖.',
   generator: 'Next.js',
   applicationName: 'OSUSWE App',
   keywords: [
@@ -18,9 +21,10 @@ export const metadata: Metadata = {
     'Society of Women Engineers',
     'Student Organaization',
   ],
-  authors: [{ name: 'Keming He', url: 'https://linkedin.com/in/keminghe' }],
+  authors: [{ name: 'Keming He', url: DEVELOPER_LINKEDIN_LINK }],
   creator: 'Keming He',
   publisher: 'Keming He',
+  metadataBase: new URL(PRODUCTION_DOMAIN), // Required for NextJS production build when using og and twitter images.
   robots: {
     index: true,
     follow: true,
@@ -30,17 +34,14 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport =
-  // biome-ignore format: added alignment for clarity.
-  {
-    themeColor : '#ffffff',
-    colorScheme: 'only light',
-    viewportFit: 'cover',        // Required for iOS devices.
+export const viewport: Viewport = {
+  colorScheme: 'normal', // Use the user's system default color scheme.
+  viewportFit: 'cover', // Required for iOS devices.
 };
 
-const inter = Inter({
+const inter: NextFont = Inter({
   subsets: ['latin'],
-  display: 'swap',
+  display: 'swap', // Allow for multiple fonts to be used for the app.
 });
 
 export default function RootLayout({
@@ -51,7 +52,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} h-dvh flex flex-col justify-center items-center circuit-board-pattern`}
       >
-        <div className="max-w-[450px] max-h-[950px] w-full h-full bg-base-100 shadow-lg relative overflow-x-auto">
+        <div className="max-w-[450px] max-h-[950px] w-full h-full relative overflow-x-auto bg-base-100 shadow-lg">
           {children}
         </div>
       </body>

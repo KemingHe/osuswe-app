@@ -1,7 +1,8 @@
+import type { NextFont } from 'next/dist/compiled/@next/font';
 import localFont from 'next/font/local';
 import type { JSX } from 'react';
 
-const didotItalic = localFont({
+const didotItalic: NextFont = localFont({
   // NOTE: Not a ts module, must use relative path.
   src: './fonts/Didot-Italic.ttf',
   display: 'swap',

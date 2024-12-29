@@ -10,7 +10,7 @@ import {
 export default function NotFoundPrompt(): JSX.Element {
   return (
     <div className="flex flex-col justify-center items-center gap-4 m-4">
-      <h1 className="flex flex-col text-center text-neutral font-extrabold">
+      <h1 className="flex flex-col text-center font-extrabold">
         <span className="text-xl text-error">404</span>
         <span className="text-5xl">Page Not Found</span>
       </h1>

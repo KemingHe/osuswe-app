@@ -6,7 +6,7 @@ exports[`NotFoundPrompt component > matches the snapshot 1`] = `
     class="flex flex-col justify-center items-center gap-4 m-4"
   >
     <h1
-      class="flex flex-col text-center text-neutral font-extrabold"
+      class="flex flex-col text-center font-extrabold"
     >
       <span
         class="text-xl text-error"
