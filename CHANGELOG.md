@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.5.4](https://github.com/KemingHe/osuswe-app/compare/v0.5.3...v0.5.4) (2024-12-29)
+
 ## [0.5.3](https://github.com/KemingHe/osuswe-app/compare/v0.5.2...v0.5.3) (2024-12-28)
 
 ## [0.5.2](https://github.com/KemingHe/osuswe-app/compare/v0.5.1...v0.5.2) (2024-12-28)
