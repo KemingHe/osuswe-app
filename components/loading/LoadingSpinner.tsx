@@ -11,17 +11,19 @@ export function LoadingSpinner({
   message = 'Loading...',
 }: LoadingSpinnerProps): JSX.Element {
   return (
-    <output className="card text-center" aria-live="polite">
-      <div className="card-body items-center gap-3 text-lg">
+    <output className="card size-48" aria-live="polite">
+      <figure className="pt-8">
         <Image
           className={styles['loading-spinner-image']}
           src="/images/osuswe-logo-512.png"
           alt="Loading spinner"
-          width={50}
-          height={50}
+          width={60}
+          height={60}
           priority={true}
         />
-        <p className="text-center">{message}</p>
+      </figure>
+      <div className="card-body px-6 pt-4 pb-8 text-center text-lg leading-snug">
+        <p className="h-full flex items-center justify-center">{message}</p>
       </div>
     </output>
   );
