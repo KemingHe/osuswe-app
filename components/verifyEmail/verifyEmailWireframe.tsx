@@ -15,7 +15,7 @@ export function VerifyEmailWireframe({
       {isFailed ? (
         <FailurePrompt />
       ) : (
-        <LoadingSpinner message={'Verifying...'} />
+        <LoadingSpinner message={'Verifying your email...'} />
       )}
     </main>
   );

@@ -20,7 +20,9 @@ export default function RedirectOnceSignedInGuard({
   children,
 }: { children: ReactNode }): JSX.Element {
   // Wrap the loading spinner and fatal error components with a centered wrapper.
-  const WrappedLoadingSpinner = withCenteredWrapper(LoadingSpinner);
+  const WrappedLoadingSpinner = withCenteredWrapper(() => (
+    <LoadingSpinner message={'Redirecting to dashboard...'} />
+  ));
   const WrappedFatalError = withCenteredWrapper(FatalError);
 
   const stackClientApp: StackClientApp | undefined = useStackApp();
