@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PRONOUN_OPTIONS > matches the latest snapshot 1`] = `
+[
+  "he/him",
+  "she/her",
+  "they/them",
+  "ze/zir",
+  "other",
+  "prefer not to say",
+]
+`;

@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`zodMessageConstants > matches the latest snapshot 1`] = `
+{
+  "NONEMPTY_SELECTION_ERROR_MESSAGE": "Please make a selection",
+  "UNIQUE_VALUES_ERROR_MESSAGE": "Please select each option only once",
+}
+`;

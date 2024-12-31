@@ -2,6 +2,10 @@ import { type RenderResult, render, screen } from '@testing-library/react';
 
 import { LoadingSpinner } from '@/components/loading/LoadingSpinner';
 
+vi.mock('@/constants/loadingMessageConstants', () => ({
+  DEFAULT_LOADING_MESSAGE: 'default loading message',
+}));
+
 describe('LoadingSpinner component', () => {
   it('renders an accessible and visible loading spinner', () => {
     render(<LoadingSpinner />);
@@ -11,7 +15,7 @@ describe('LoadingSpinner component', () => {
     expect(elementByStatus).toBeVisible();
 
     // Select the element by its text content.
-    const elementByText = screen.getByText('Loading...');
+    const elementByText = screen.getByText('default loading message');
     expect(elementByText).toBeVisible();
   });
 

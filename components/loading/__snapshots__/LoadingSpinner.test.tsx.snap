@@ -27,7 +27,7 @@ exports[`LoadingSpinner component > matches the snapshot 1`] = `
       <p
         class="h-full flex items-center justify-center"
       >
-        Loading...
+        default loading message
       </p>
     </div>
   </output>

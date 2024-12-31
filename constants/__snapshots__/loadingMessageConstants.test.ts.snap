@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`loadingMessageConstants > matches latest snapshot 1`] = `
+{
+  "DEFAULT_LOADING_MESSAGE": "Loading...",
+  "FIREBASE_AUTH_PROVIDER_LOADING_MESSAGE": "Signing you in...",
+  "REDIRECT_ONCE_SIGNED_IN_GUARD_REDIRECTING_MESSAGE": "Redirecting to dashboard...",
+  "REQUIRES_SIGNED_IN_GUARD_REDIRECTING_MESSAGE": "Redirecting to sign in...",
+  "STACK_PROVIDER_LOADING_MESSAGE": "Securing your session...",
+  "STACK_ROLE_PROVIDER_LOADING_MESSAGE": "Fetching user roles...",
+  "VERIFY_EMAIL_LOADING_MESSAGE": "Verifying your email...",
+}
+`;

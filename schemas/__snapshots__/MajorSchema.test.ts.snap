@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MAJOR_OPTIONS > matches the latest snapshot 1`] = `
+[
+  "Aerospace Engineering",
+  "Aviation",
+  "Biomedical Engineering",
+  "Chemical Engineering",
+  "Civil Engineering",
+  "Computer Science and Engineering",
+  "Electrical and Computer Engineering",
+  "Engineering Physics",
+  "Engineering Technology",
+  "Environmental Engineering",
+  "Food, Agricultural, and Biological Engineering",
+  "Industrial and Systems Engineering",
+  "Materials Science and Engineering",
+  "Mechanical Engineering",
+  "Welding Engineering",
+  "Undecided",
+  "Architecture",
+  "Other",
+]
+`;

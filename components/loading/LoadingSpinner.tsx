@@ -2,13 +2,14 @@ import Image from 'next/image';
 import type { JSX } from 'react';
 
 import styles from '@/components/loading/LoadingSpinner.module.css';
+import { DEFAULT_LOADING_MESSAGE } from '@/constants/loadingMessageConstants';
 
 export interface LoadingSpinnerProps {
   message?: string;
 }
 
 export function LoadingSpinner({
-  message = 'Loading...',
+  message = DEFAULT_LOADING_MESSAGE,
 }: LoadingSpinnerProps): JSX.Element {
   return (
     <output className="card size-48" aria-live="polite">

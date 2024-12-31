@@ -2,6 +2,7 @@ import type { JSX } from 'react';
 
 import { LoadingSpinner } from '@/components/loading/LoadingSpinner';
 import FailurePrompt from '@/components/verifyEmail/FailurePrompt';
+import { VERIFY_EMAIL_LOADING_MESSAGE } from '@/constants/loadingMessageConstants';
 
 export interface VerifyEmailWireframeProps {
   isFailed: boolean;
@@ -15,7 +16,7 @@ export function VerifyEmailWireframe({
       {isFailed ? (
         <FailurePrompt />
       ) : (
-        <LoadingSpinner message={'Verifying your email...'} />
+        <LoadingSpinner message={VERIFY_EMAIL_LOADING_MESSAGE} />
       )}
     </main>
   );

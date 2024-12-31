@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.8](https://github.com/KemingHe/osuswe-app/compare/v0.5.7...v0.5.8) (2024-12-31)
+
+### Bug Fixes
+
+* **auth/verify-email/layout.tsx:** removed auto-redir guard because interfere w/ stack redir ([1a48bbb](https://github.com/KemingHe/osuswe-app/commit/1a48bbb4e568c023f7c0d99ac57a31f081e8136b)), closes [#28](https://github.com/KemingHe/osuswe-app/issues/28)
+
+## [0.5.7](https://github.com/KemingHe/osuswe-app/compare/v0.5.6...v0.5.7) (2024-12-31)
+
 ## [0.5.6](https://github.com/KemingHe/osuswe-app/compare/v0.5.5...v0.5.6) (2024-12-30)
 
 ## [0.5.5](https://github.com/KemingHe/osuswe-app/compare/v0.5.4...v0.5.5) (2024-12-29)
