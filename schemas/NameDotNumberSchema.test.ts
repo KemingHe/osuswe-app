@@ -4,9 +4,9 @@ import { NameDotNumberSchema } from '@/schemas/NameDotNumberSchema';
 
 describe('NameDotNumberSchema', () => {
   it('parses valid name dot numbers without error', () => {
-    expect(() => NameDotNumberSchema.parse('buckeye.1')).not.toThrow();
-    expect(() => NameDotNumberSchema.parse('buck-eye.123')).not.toThrow();
-    expect(() => NameDotNumberSchema.parse('bu-ck-eye.1')).not.toThrow();
+    expect(NameDotNumberSchema.parse('buckeye.1')).toBe('buckeye.1');
+    expect(NameDotNumberSchema.parse('buck-eye.123')).toBe('buck-eye.123');
+    expect(NameDotNumberSchema.parse('bu-ck-eye.1')).toBe('bu-ck-eye.1');
   });
 
   it('throws an error for invalid name dot numbers', () => {

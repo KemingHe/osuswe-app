@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CTR_OPTIONS > matches the latest snapshot 1`] = `
+[
+  "I am a regional campus student",
+  "I am a transfer student",
+  "I am a commuter student",
+  "I am a Columbus State Community College student",
+  "I am none of the above",
+]
+`;

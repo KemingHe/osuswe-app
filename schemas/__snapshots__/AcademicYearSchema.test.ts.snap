@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ACADEMIC_YEAR_OPTIONS > matches the latest snapshot 1`] = `
+[
+  "High School",
+  "1st Year (Freshman)",
+  "2nd Year (Sophomore)",
+  "3rd Year (Junior)",
+  "4th Year (Senior)",
+  "5th+ Year (Super Senior)",
+]
+`;

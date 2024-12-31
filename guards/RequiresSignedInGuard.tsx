@@ -9,6 +9,7 @@ import { type JSX, type ReactNode, useEffect } from 'react';
 
 import FatalError from '@/components/error/FatalError';
 import { LoadingSpinner } from '@/components/loading/LoadingSpinner';
+import { REQUIRES_SIGNED_IN_GUARD_REDIRECTING_MESSAGE } from '@/constants/loadingMessageConstants';
 import { AUTH_SIGN_IN_ROUTE } from '@/constants/routeConstants';
 import withCenteredWrapper from '@/hocs/withCenteredWrapper';
 import {
@@ -21,7 +22,7 @@ export default function RequiresSignedInGuard({
 }: { children: ReactNode }): JSX.Element {
   // Wrap the loading spinner and fatal error components with a centered wrapper.
   const WrappedLoadingSpinner = withCenteredWrapper(() => (
-    <LoadingSpinner message={'Redirecting to sign in...'} />
+    <LoadingSpinner message={REQUIRES_SIGNED_IN_GUARD_REDIRECTING_MESSAGE} />
   ));
   const WrappedFatalError = withCenteredWrapper(FatalError);
 

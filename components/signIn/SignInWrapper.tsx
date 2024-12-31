@@ -28,7 +28,7 @@ export function SignInWrapper({
     resolver: zodResolver(SignInFormFieldsSchema),
   });
   // Handler-level state and methods.
-  const [handlerErrored, setHandlerErrored] = useState<boolean>(false);
+  const [isHandlerErrored, setHandlerErrored] = useState<boolean>(false);
 
   // ---------------------------------------------------------------------------
   const signInHandler: SubmitHandler<SignInFormFields> = async (
@@ -45,7 +45,7 @@ export function SignInWrapper({
   };
 
   function isEmailSent(): boolean {
-    return isSubmitSuccessful && !handlerErrored;
+    return isSubmitSuccessful && !isHandlerErrored;
   }
 
   function isDisabled(): boolean {
@@ -63,7 +63,7 @@ export function SignInWrapper({
   // Shoot confetti when the email is sent successfully.
   useEffect(() => {
     if (isEmailSent()) signInConfetti();
-  }, [isSubmitSuccessful, handlerErrored]);
+  }, [isSubmitSuccessful, isHandlerErrored]);
 
   // ---------------------------------------------------------------------------
   return (

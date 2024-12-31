@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`USER_ROLE_OPTIONS > matches the latest snapshot 1`] = `
+[
+  "admin",
+  "user",
+]
+`;

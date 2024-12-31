@@ -9,6 +9,7 @@ import { type JSX, type ReactNode, useEffect } from 'react';
 
 import FatalError from '@/components/error/FatalError';
 import { LoadingSpinner } from '@/components/loading/LoadingSpinner';
+import { REDIRECT_ONCE_SIGNED_IN_GUARD_REDIRECTING_MESSAGE } from '@/constants/loadingMessageConstants';
 import { USER_DASHBOARD_ROUTE } from '@/constants/routeConstants';
 import withCenteredWrapper from '@/hocs/withCenteredWrapper';
 import {
@@ -21,7 +22,9 @@ export default function RedirectOnceSignedInGuard({
 }: { children: ReactNode }): JSX.Element {
   // Wrap the loading spinner and fatal error components with a centered wrapper.
   const WrappedLoadingSpinner = withCenteredWrapper(() => (
-    <LoadingSpinner message={'Redirecting to dashboard...'} />
+    <LoadingSpinner
+      message={REDIRECT_ONCE_SIGNED_IN_GUARD_REDIRECTING_MESSAGE}
+    />
   ));
   const WrappedFatalError = withCenteredWrapper(FatalError);
 
