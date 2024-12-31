@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.0](https://github.com/KemingHe/osuswe-app/compare/v0.5.8...v0.6.0) (2024-12-31)
+
+### Features
+
+* **components/verifyemail/:** added AlreadySignedInPrompt.tsx option to fixed verify email page ([2f40476](https://github.com/KemingHe/osuswe-app/commit/2f404760528b7f784707947154b7cece4e7c5808))
+
 ## [0.5.8](https://github.com/KemingHe/osuswe-app/compare/v0.5.7...v0.5.8) (2024-12-31)
 
 ### Bug Fixes
