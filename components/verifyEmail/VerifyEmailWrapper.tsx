@@ -7,7 +7,13 @@ import {
 import { VerifyEmailWireframe } from '@/components/verifyEmail/verifyEmailWireframe';
 
 export default function VerifyEmailWrapper(): JSX.Element {
-  const { isFailed }: UseVerifyEmailReturnProps = useVerifyEmail();
+  const { isAlreadySignedIn, isFailed }: UseVerifyEmailReturnProps =
+    useVerifyEmail();
 
-  return <VerifyEmailWireframe isFailed={isFailed} />;
+  return (
+    <VerifyEmailWireframe
+      isAlreadySignedIn={isAlreadySignedIn}
+      isFailed={isFailed}
+    />
+  );
 }

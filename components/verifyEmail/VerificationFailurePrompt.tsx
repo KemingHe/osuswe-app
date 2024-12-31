@@ -5,17 +5,17 @@ import type { JSX } from 'react';
 
 import { AUTH_SIGN_IN_ROUTE } from '@/constants/routeConstants';
 
-export default function FailurePrompt(): JSX.Element {
+export default function VerificationFailurePrompt(): JSX.Element {
   // NOTE: Width is manually set here to be consistent with SignInWirefram,
   // refactor when ready.
   return (
     <div className="card w-72">
       <figure className="pt-8">
-        <ExclamationTriangleIcon className="size-14 text-warning" />
+        <ExclamationTriangleIcon className="size-14 text-error" />
       </figure>
       <div className="card-body items-center py-4 gap-4">
         {/* NOTE: Current manual width setting breaks if using text-2xl or above. */}
-        <h2 className="card-title text-warning">Verification Failed</h2>
+        <h2 className="card-title text-error">Verification Failed</h2>
         <div className="card-actions gap-4">
           <div className="flex flex-col gap-2 text-sm leading-tight">
             <p>Make sure to:</p>
@@ -39,7 +39,7 @@ export default function FailurePrompt(): JSX.Element {
           <div className="w-full">
             <Link
               href={AUTH_SIGN_IN_ROUTE}
-              className="btn btn-outline btn-sm w-full"
+              className="btn btn-accent btn-sm w-full"
             >
               Try again
               <ArrowRightIcon className="size-4 -ms-1.5" />
