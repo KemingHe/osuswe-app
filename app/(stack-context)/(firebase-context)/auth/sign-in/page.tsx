@@ -2,8 +2,9 @@
 
 import type { JSX } from 'react';
 
-import { signInServerAction } from '@/app/(stack-context)/(firebase-context)/auth/sign-in/actions';
 import { SignInWrapper } from '@/components/signIn/SignInWrapper';
+
+import { signInServerAction } from './actions';
 
 export default function SignInPage(): JSX.Element {
   return <SignInWrapper signInServerAction={signInServerAction} />;

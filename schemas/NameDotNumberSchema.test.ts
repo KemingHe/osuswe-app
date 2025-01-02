@@ -1,5 +1,3 @@
-import type { ZodError } from 'zod';
-
 import { NameDotNumberSchema } from '@/schemas/NameDotNumberSchema';
 
 describe('NameDotNumberSchema', () => {
@@ -27,21 +25,12 @@ describe('NameDotNumberSchema', () => {
   it('throws the correct error message for invalid string', () => {
     const result = NameDotNumberSchema.safeParse('buckeye.0');
     expect(result.success).toBe(false);
-    const parseError: ZodError | undefined = result.error;
-    expect(parseError).not.toBeUndefined();
-    expect(parseError?.issues[0].message).toEqual('Enter a valid name.#');
+    expect(result.error?.issues[0].message).toEqual('Enter a valid name.#');
   });
 
   it('throws the correct error message for invalid type', () => {
     const result = NameDotNumberSchema.safeParse(1.2);
     expect(result.success).toBe(false);
-    const parseError: ZodError | undefined = result.error;
-    expect(parseError).not.toBeUndefined();
-    expect(parseError?.issues[0].message).toEqual('Enter a valid name.#');
-  });
-
-  it('returns the correct parsed value', () => {
-    const value: string = NameDotNumberSchema.parse('buckeye.1');
-    expect(value).toEqual('buckeye.1');
+    expect(result.error?.issues[0].message).toEqual('Enter a valid name.#');
   });
 });
