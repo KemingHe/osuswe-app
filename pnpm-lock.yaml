@@ -1084,7 +1084,6 @@ packages:
   '@keminghe/osu@4.0.1':
     resolution: {integrity: sha512-Fa7KUO7PQ7lhznn3l/fL75q43n4NKfwR1Mz/cHouY4Jxl/SLpyRIj245asZET0zHMnFDfNkKKPJdTTCdvwGzFg==}
     engines: {node: '>=8.10.0'}
-    cpu: [x64, arm64]
     os: [linux, darwin, win32]
 
   '@mapbox/node-pre-gyp@1.0.11':

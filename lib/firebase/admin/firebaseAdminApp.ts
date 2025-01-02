@@ -4,7 +4,7 @@ import { type App, getApp, getApps, initializeApp } from 'firebase-admin/app';
 import { type Auth, getAuth } from 'firebase-admin/auth';
 import { type Firestore, getFirestore } from 'firebase-admin/firestore';
 
-import { firebaseAdminConfig } from '@/lib/firebase/firebaseAdminConfig';
+import { firebaseAdminAppConfig } from '@/lib/firebase/admin/firebaseAdminAppConfig';
 
 // -----------------------------------------------------------------------------
 // biome-ignore format: added alignment for clarity.
@@ -21,9 +21,11 @@ function formatPrivateKey(privateKey: string): string {
 
 // -----------------------------------------------------------------------------
 export function firebaseAdminApp(): FirebaseAdminServices {
-  const projectId: string = firebaseAdminConfig.projectId;
-  const privateKey: string = formatPrivateKey(firebaseAdminConfig.privateKey);
-  const clientEmail: string = firebaseAdminConfig.clientEmail;
+  const projectId: string = firebaseAdminAppConfig.projectId;
+  const privateKey: string = formatPrivateKey(
+    firebaseAdminAppConfig.privateKey,
+  );
+  const clientEmail: string = firebaseAdminAppConfig.clientEmail;
 
   let fbAdminApp: App;
   const fbAdminAppList: App[] | undefined = getApps();

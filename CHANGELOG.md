@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.7.0](https://github.com/KemingHe/osuswe-app/compare/v0.6.0...v0.7.0) (2025-01-02)
+
+### Features
+
+* **(firebase-context)/action.ts:** securely added user role firestore accessor server action ([f6c8b1b](https://github.com/KemingHe/osuswe-app/commit/f6c8b1bbe73cd4c487442fe67db716167cda0c97))
+
 ## [0.6.0](https://github.com/KemingHe/osuswe-app/compare/v0.5.8...v0.6.0) (2024-12-31)
 
 ### Features

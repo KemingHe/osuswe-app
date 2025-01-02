@@ -1,3 +1,5 @@
+import 'server-only';
+
 // biome-ignore format: added alignment for clarity.
 export interface FirebaseAdminConfig {
   projectId  : string;
@@ -5,7 +7,7 @@ export interface FirebaseAdminConfig {
   clientEmail: string;
 }
 
-export const firebaseAdminConfig: FirebaseAdminConfig =
+export const firebaseAdminAppConfig: FirebaseAdminConfig =
   // biome-ignore format: added alignment for clarity.
   {
     projectId  : process.env.FIREBASE_ADMIN_PROJECT_ID    as string,

@@ -2,9 +2,9 @@ import { StackProvider } from '@stackframe/stack';
 import type { JSX, ReactNode } from 'react';
 import { ToastContainer } from 'react-toastify';
 
-import stackServerApp from '@/lib/stack-auth/stackServerApp';
+import stackServerApp from '@/lib/stack-auth/server/stackServerApp';
 
-export default function ClientAppLayout({
+export default function StackContextLayout({
   children,
 }: Readonly<{ children: ReactNode }>): JSX.Element {
   return (
