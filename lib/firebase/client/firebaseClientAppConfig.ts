@@ -1,6 +1,6 @@
 import type { FirebaseOptions } from 'firebase/app';
 
-const firebaseClientConfig: FirebaseOptions =
+const firebaseClientAppConfig: FirebaseOptions =
   // biome-ignore format: added alignment for clarity.
   {
     apiKey           : process.env.NEXT_PUBLIC_FIREBASE_API_KEY             as string,
@@ -12,4 +12,4 @@ const firebaseClientConfig: FirebaseOptions =
     measurementId    : process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID      as string,
 };
 
-export default firebaseClientConfig;
+export default firebaseClientAppConfig;

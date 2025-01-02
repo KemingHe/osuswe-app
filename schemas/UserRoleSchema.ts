@@ -1,6 +1,15 @@
 import { z } from 'zod';
 
-export const USER_ROLE_OPTIONS: string[] = ['admin', 'user'];
+export enum USER_ROLE_ENUM {
+  ADMIN = 'admin',
+  USER = 'user',
+}
+
+export const USER_ROLE_OPTIONS: string[] = [
+  USER_ROLE_ENUM.ADMIN,
+  USER_ROLE_ENUM.USER,
+];
+
 const userRoleErrorMessage: string = 'Invalid user role';
 const isValidUserRole = (value: string): boolean =>
   USER_ROLE_OPTIONS.includes(value);

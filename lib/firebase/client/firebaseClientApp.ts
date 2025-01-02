@@ -2,7 +2,7 @@ import { type FirebaseApp, getApp, getApps, initializeApp } from 'firebase/app';
 import { type Auth, getAuth } from 'firebase/auth';
 import { type Firestore, getFirestore } from 'firebase/firestore';
 
-import firebaseConfig from '@/lib/firebase/firebaseClientConfig';
+import firebaseConfig from '@/lib/firebase/client/firebaseClientAppConfig';
 
 // biome-ignore format: added alignment for clarity.
 export interface FirebaseClientServices {
