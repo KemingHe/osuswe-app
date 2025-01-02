@@ -7,7 +7,8 @@ import type { JSX, ReactNode } from 'react';
 import { PRODUCTION_DOMAIN } from '@/constants/domainConstants';
 import { DEVELOPER_LINKEDIN_LINK } from '@/constants/externalLinkConstants';
 import GOOGLE_ANALYTICS_MEASUREMENT_ID from '@/lib/firebase/googleAnalyticsMeasurementId';
-import '@/app/globals.css';
+
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'OSUSWE App',

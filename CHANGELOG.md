@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.8.0](https://github.com/KemingHe/osuswe-app/compare/v0.7.0...v0.8.0) (2025-01-02)
+
+### Features
+
+* **usefirebaseauthintegration.ts:** added firebase auto-signin with custom claims as hook in layout ([5f4d407](https://github.com/KemingHe/osuswe-app/commit/5f4d407a052494e55dd83272611539986d13f67b)), closes [#23](https://github.com/KemingHe/osuswe-app/issues/23)
+
 ## [0.7.0](https://github.com/KemingHe/osuswe-app/compare/v0.6.0...v0.7.0) (2025-01-02)
 
 ### Features
