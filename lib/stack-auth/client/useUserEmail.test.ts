@@ -2,6 +2,7 @@
 
 import { useUser } from '@stackframe/stack';
 import { renderHook } from '@testing-library/react';
+import type { Mock } from 'vitest';
 
 import { useUserEmail } from '@/lib/stack-auth/client/useUserEmail';
 
@@ -16,7 +17,7 @@ describe('The useUserEmail (custom client-side Stack-Auth) hook', () => {
   });
 
   it('has correct return prop values when the user is not signed in', () => {
-    useUser.mockReturnValue(null);
+    (useUser as Mock).mockReturnValue(null);
 
     const { result } = renderHook(() => useUserEmail());
 
@@ -25,7 +26,7 @@ describe('The useUserEmail (custom client-side Stack-Auth) hook', () => {
   });
 
   it('has correct return prop values when user is available but user.primaryEmail is not available', () => {
-    useUser.mockReturnValue({});
+    (useUser as Mock).mockReturnValue({});
 
     const { result } = renderHook(() => useUserEmail());
 
@@ -35,7 +36,7 @@ describe('The useUserEmail (custom client-side Stack-Auth) hook', () => {
 
   it('has correct return prop values when user and user.primaryEmail are available', () => {
     const mockEmail = 'test@example.com';
-    useUser.mockReturnValue({ primaryEmail: mockEmail });
+    (useUser as Mock).mockReturnValue({ primaryEmail: mockEmail });
 
     const { result } = renderHook(() => useUserEmail());
 
@@ -44,7 +45,7 @@ describe('The useUserEmail (custom client-side Stack-Auth) hook', () => {
   });
 
   it('has correct return prop values when user and user.primaryEmail are available, but user.primaryEmail is null', () => {
-    useUser.mockReturnValue({ primaryEmail: null });
+    (useUser as Mock).mockReturnValue({ primaryEmail: null });
 
     const { result } = renderHook(() => useUserEmail());
 

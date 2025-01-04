@@ -38,7 +38,7 @@ export function useFirebaseAuthIntegration({
       // Short-circuit and flag as error if user email is invalid.
       if (!userEmail || !OSUEmailSchema.safeParse(userEmail).success) {
         setIsSignInErrored(true);
-        console.error('Invalid user OSU email.');
+        console.error('Invalid user OSU email');
         return;
       }
 

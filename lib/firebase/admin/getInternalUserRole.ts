@@ -13,7 +13,7 @@ import { USER_ROLE_ENUM } from '@/schemas/UserRoleSchema';
 export default async function getInternalUserRole(
   userOSUEmail: OSUEmail,
 ): Promise<string> {
-  // Validate user's OSU email.
+  // Validate user's OSU email, throw ZodError if invalid.
   OSUEmailSchema.parse(userOSUEmail);
 
   const defaultRole: string = USER_ROLE_ENUM.USER;

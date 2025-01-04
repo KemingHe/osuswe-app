@@ -30,7 +30,7 @@ describe('NameDotNumberSchema', () => {
     const result = OSUEmailSchema.safeParse('buckeye.0@osu.edu');
     expect(result.success).toBe(false);
     expect(result.error?.issues[0].message).toEqual(
-      'Enter a valid @osu.edu email',
+      'Use a valid @osu.edu email',
     );
   });
 
@@ -38,7 +38,7 @@ describe('NameDotNumberSchema', () => {
     const result = OSUEmailSchema.safeParse(1.2);
     expect(result.success).toBe(false);
     expect(result.error?.issues[0].message).toEqual(
-      'Enter a valid @osu.edu email',
+      'Use a valid @osu.edu email',
     );
   });
 });
