@@ -13,9 +13,9 @@ import {
 
 const customPageLoadTimeout = { timeout: 30000 };
 const additionalPageLoadTimeout: number = 1000;
-// As a known CI issue, allow max 0% deviation in pixel diff.
-const customDiffPixelRatio = { maxDiffPixelRatio: 0.0 };
-// Avoid screenshotting version number on pages.
+// Allow max 0% deviation in pixel diff.
+const customDiffPixelRatio = { maxDiffPixelRatio: 0 };
+// Avoid screenshotting versioning components on page.
 const customScreenshotOptions: PageScreenshotOptions = {
   style: '.no-screenshot{display:none !important}',
 };
