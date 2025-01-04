@@ -1,7 +1,7 @@
 import { OSU_DOT_EDU_EMAIL_PATTERN } from '@keminghe/osu';
 import { z } from 'zod';
 
-const invalidErrorMessage: string = 'Enter a valid @osu.edu email';
+const invalidErrorMessage: string = 'Use a valid @osu.edu email';
 
 export const OSUEmailSchema = z
   .string({ message: invalidErrorMessage })

@@ -15,9 +15,5 @@ export const REQUIRES_SIGNED_IN_GUARD_REDIRECTING_MESSAGE: string =
 export const REDIRECT_ONCE_SIGNED_IN_GUARD_REDIRECTING_MESSAGE: string =
   'Redirecting to dashboard...';
 export const VERIFY_EMAIL_LOADING_MESSAGE: string = 'Verifying your email...';
-
-// Firebase loading messages.
-export const FIREBASE_AUTH_INTEGRATION_LOADING_MESSAGE: string =
+export const UPDATE_METADATA_LOADING_MESSAGE: string =
   'Validating your role...';
-export const FIREBASE_AUTH_PROVIDER_LOADING_MESSAGE: string =
-  'Signing you in...';
