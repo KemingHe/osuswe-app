@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BottomNavItem component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <a
+    aria-label="To test page"
+    class="text-primary border-t-2 border-secondary"
+    href="/test-path"
+  >
+    <svg
+      class="size-5"
+      data-testid="mock-nav-icon"
+    />
+    <span
+      class="btm-nav-label"
+    >
+      Test
+    </span>
+  </a>
+</DocumentFragment>
+`;
