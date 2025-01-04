@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.9.3](https://github.com/KemingHe/osuswe-app/compare/v0.9.2...v0.9.3) (2025-01-04)
+
+### Bug Fixes
+
+* **.github/workflows:** pinned pnpm/action-setup to v4.0.0 commit hash for security ([f0fce26](https://github.com/KemingHe/osuswe-app/commit/f0fce26a71118272abc5b23e4af17d8acb2831f7))
+
+## [0.9.2](https://github.com/KemingHe/osuswe-app/compare/v0.9.1...v0.9.2) (2025-01-04)
+
+### Bug Fixes
+
+* **package.json:** added webkit to playwright install command ([82f83ec](https://github.com/KemingHe/osuswe-app/commit/82f83ec893ecc1b6b9270adfc3acfedd3c10eccf)), closes [#43](https://github.com/KemingHe/osuswe-app/issues/43)
+
+## [0.9.1](https://github.com/KemingHe/osuswe-app/compare/v0.9.0...v0.9.1) (2025-01-04)
+
 ## [0.9.0](https://github.com/KemingHe/osuswe-app/compare/v0.8.1...v0.9.0) (2025-01-04)
 
 ### Features
