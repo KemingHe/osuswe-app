@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.9.0](https://github.com/KemingHe/osuswe-app/compare/v0.8.1...v0.9.0) (2025-01-04)
+
+### Features
+
+* **(stack-client-context)/actions.ts:** adopted client ro metadata for role management ([6320431](https://github.com/KemingHe/osuswe-app/commit/6320431733c81c40742311092324d0b0caa4c3e5)), closes [#36](https://github.com/KemingHe/osuswe-app/issues/36)
+
 ## [0.8.1](https://github.com/KemingHe/osuswe-app/compare/v0.8.0...v0.8.1) (2025-01-04)
 
 ## [0.8.0](https://github.com/KemingHe/osuswe-app/compare/v0.7.0...v0.8.0) (2025-01-02)
