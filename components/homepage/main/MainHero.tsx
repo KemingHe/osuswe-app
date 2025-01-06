@@ -4,7 +4,7 @@ import Link from 'next/link';
 import type { JSX } from 'react';
 
 import { DEVELOPER_LINKEDIN_LINK } from '@/constants/externalLinkConstants';
-import { USER_DASHBOARD_ROUTE } from '@/constants/routeConstants';
+import { AUTH_SIGN_IN_ROUTE } from '@/constants/routeConstants';
 
 export default function MainHero(): JSX.Element {
   return (
@@ -17,9 +17,9 @@ export default function MainHero(): JSX.Element {
         priority={true}
       />
       <Link
-        href={USER_DASHBOARD_ROUTE}
+        href={AUTH_SIGN_IN_ROUTE}
         className="btn btn-lg btn-accent shadow-md"
-        aria-label="Go to user dashboard"
+        aria-label="Go to sign in page"
       >
         Get Started
         <ArrowRightIcon className="size-4 -ms-1" aria-hidden="true" />

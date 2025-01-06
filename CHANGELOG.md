@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.9.4](https://github.com/KemingHe/osuswe-app/compare/v0.9.3...v0.9.4) (2025-01-06)
+
+### Bug Fixes
+
+* **mainhero.tsx:** replaced main action link with to sign-in instead of to-dashboard, updated aria ([c59ac61](https://github.com/KemingHe/osuswe-app/commit/c59ac61c5d470726af89391d76c9f7eb3b7bd105))
+
 ## [0.9.3](https://github.com/KemingHe/osuswe-app/compare/v0.9.2...v0.9.3) (2025-01-04)
 
 ### Bug Fixes
